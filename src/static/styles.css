@@ -142,3 +142,35 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-list {
+  list-style: disc;
+  padding: 10px 16px;
+  margin-top: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+  color: #333;
+}
+
+.participants-list li {
+  margin: 6px 0;
+  line-height: 1.3;
+}
+
+/* Muted style for empty state */
+.participants-list li.no-participants {
+  color: #777;
+  font-style: italic;
+}
+
+/* Small screens: ensure list fits nicely */
+@media (max-width: 480px) {
+  .participants-list {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
